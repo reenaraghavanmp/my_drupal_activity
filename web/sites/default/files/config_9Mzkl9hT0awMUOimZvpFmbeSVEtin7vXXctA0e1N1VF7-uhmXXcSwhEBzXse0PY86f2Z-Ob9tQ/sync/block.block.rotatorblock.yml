@@ -1,0 +1,25 @@
+uuid: 1aff2b60-8427-4a0e-9a22-2a6117d77496
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:rotator:4c1aa8a2-875f-4555-8f15-15b61750faf0'
+  module:
+    - block_content
+  theme:
+    - olivero
+id: rotatorblock
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:4c1aa8a2-875f-4555-8f15-15b61750faf0'
+settings:
+  id: 'block_content:4c1aa8a2-875f-4555-8f15-15b61750faf0'
+  label: 'Rotator block'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

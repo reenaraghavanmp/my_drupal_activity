@@ -19,7 +19,8 @@
         "drupal/console": "~1.0",
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-project-message": "^9.4",
-        "drupal/core-recommended": "^9.4"
+        "drupal/core-recommended": "^9.4",
+        "drupal/slick": "^2.6"
     },
     "conflict": {
         "drupal/drupal": "*"
