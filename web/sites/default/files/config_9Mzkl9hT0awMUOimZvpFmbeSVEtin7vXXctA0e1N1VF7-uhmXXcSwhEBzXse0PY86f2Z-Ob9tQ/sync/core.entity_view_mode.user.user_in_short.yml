@@ -1,0 +1,10 @@
+uuid: 6c3ccd53-39c5-4388-bc06-1f413d4e636c
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.user_in_short
+label: 'User In Short'
+targetEntityType: user
+cache: true

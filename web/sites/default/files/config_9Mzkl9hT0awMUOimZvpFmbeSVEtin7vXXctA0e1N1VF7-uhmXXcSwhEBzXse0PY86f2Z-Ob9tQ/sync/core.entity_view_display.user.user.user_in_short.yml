@@ -1,8 +1,9 @@
-uuid: 8e6d49d0-d0a3-42c6-b43f-74613fc67a8b
+uuid: e8a8e45f-39ef-46d4-a1ba-d9701f78ed4d
 langcode: en
-status: true
+status: false
 dependencies:
   config:
+    - core.entity_view_mode.user.user_in_short
     - field.field.user.user.field_activity
     - field.field.user.user.field_date_of_birth
     - field.field.user.user.field_first_name
@@ -14,22 +15,14 @@ dependencies:
   module:
     - datetime
     - image
-    - options
     - user
 _core:
   default_config_hash: mZLyuWM9CQx2ZJVqFGSbzgFnHzudVbHBYmdU256A5Wk
-id: user.user.default
+id: user.user.user_in_short
 targetEntityType: user
 bundle: user
-mode: default
+mode: user_in_short
 content:
-  field_activity:
-    type: list_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 11
-    region: content
   field_date_of_birth:
     type: datetime_default
     label: above
@@ -37,7 +30,7 @@ content:
       timezone_override: ''
       format_type: medium
     third_party_settings: {  }
-    weight: 8
+    weight: 4
     region: content
   field_first_name:
     type: string
@@ -45,7 +38,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 6
+    weight: 2
     region: content
   field_last_name:
     type: string
@@ -53,26 +46,12 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 7
-    region: content
-  field_profession:
-    type: list_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 10
-    region: content
-  field_qualification:
-    type: list_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 9
+    weight: 3
     region: content
   member_for:
     settings: {  }
     third_party_settings: {  }
-    weight: 5
+    weight: 1
     region: content
   user_picture:
     type: image
@@ -85,4 +64,7 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-hidden: {  }
+hidden:
+  field_activity: true
+  field_profession: true
+  field_qualification: true
