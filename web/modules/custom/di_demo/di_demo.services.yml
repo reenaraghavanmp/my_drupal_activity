@@ -1,0 +1,7 @@
+services:
+  logger.channel.di_demo:
+    parent: logger.channel_base
+    arguments: ['di_demo']
+  di_demo.demo_service:
+    class: Drupal\di_demo\DemoService
+    arguments: []

@@ -1,0 +1,17 @@
+di_demo.demo_form:
+  path: '/admin/config/di_demo/demo'
+  defaults:
+    _form: '\Drupal\di_demo\Form\DemoForm'
+    _title: 'DemoForm'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+
+di_demo.demo_controller_hello:
+  path: '/di_demo/hello_world'
+  defaults:
+    _controller: '\Drupal\di_demo\Controller\DemoController::demo'
+    _title: 'Sample DI Demo'
+  requirements:
+    _permission: 'access content'

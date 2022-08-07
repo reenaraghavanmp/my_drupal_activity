@@ -1,0 +1,13 @@
+{
+    "name": "di_demo",
+    "type": "drupal-module",
+    "description": "Dependency Injection Sample Module",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/di_demo",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/di_demo",
+        "source": "http://cgit.drupalcode.org/di_demo",
+    },
+}

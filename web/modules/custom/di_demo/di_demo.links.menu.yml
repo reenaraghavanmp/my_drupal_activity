@@ -1,0 +1,6 @@
+di_demo.demo_form:
+  title: 'DemoForm'
+  route_name: di_demo.demo_form
+  description: 'A description for the menu entry'
+  parent: system.admin_config_system
+  weight: 99
